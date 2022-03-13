@@ -17,6 +17,12 @@ export function Guilds({handleGuildSelect} : Props){
       name: 'Lendários',
       icon: 'image.png',
       owner: true
+    },
+    {
+      id: '2',
+      name: 'FarmingSimulator',
+      icon: 'image.png',
+      owner: true
     }
   ]
   return (
