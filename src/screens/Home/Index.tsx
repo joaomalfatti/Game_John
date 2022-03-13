@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import { FlatList, View } from 'react-native';
-import { CategorySelect } from "../../components/CategorySelect/Index";
+import { CategorySelect } from "../../components/CategorySelect";
 import { Profile } from "../../components/Profile";
 import { ButtonAdd } from "../../components/ButtonAdd";
 import { ListHeader } from "../../components/ListHeader";
@@ -54,11 +54,15 @@ export function Home(){
         navigation.navigate('AppointmentDetails')
     }
 
+    function handleAppointmentCreate(){
+        navigation.navigate('AppointmentCreate')
+    }
+
     return(
         <Background>
             <View style={styles.header}>
                 <Profile />
-                <ButtonAdd />
+                <ButtonAdd onPress={handleAppointmentCreate}/>
             </View>
             <CategorySelect 
                 categorySelected={category}
