@@ -36,5 +36,4 @@ export function CategorySelect({categorySelected, setCategory, hasCheckBox = fal
             }
         </ScrollView>
     )
-
 }
