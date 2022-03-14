@@ -23,7 +23,31 @@ export function Guilds({handleGuildSelect} : Props){
       name: 'FarmingSimulator',
       icon: 'image.png',
       owner: true
-    }
+    },
+    {
+      id: '3',
+      name: 'FarmingSimulator',
+      icon: 'image.png',
+      owner: true
+    },
+    {
+      id: '4',
+      name: 'FarmingSimulator',
+      icon: 'image.png',
+      owner: true
+    },
+    {
+      id: '5',
+      name: 'FarmingSimulator',
+      icon: 'image.png',
+      owner: true
+    },
+    {
+      id: '6',
+      name: 'FarmingSimulator',
+      icon: 'image.png',
+      owner: true
+    },
   ]
   return (
     <View style={styles.container}>
@@ -38,6 +62,7 @@ export function Guilds({handleGuildSelect} : Props){
         )}
         showsVerticalScrollIndicator={false}
         ItemSeparatorComponent={() => <ListDivider />}
+        contentContainerStyle={{paddingBottom: 68}}
         style={styles.guilds}
       />
     </View>
